@@ -1,22 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework 11 por fin </title>
+    <title>Page title</title>
+    <link rel="stylesheet" href="../css/index.min.css" />
   </head>
   <body>
-    <form class="search-form" id="search-form">
-      <input
-        type="text"
-        name="searchQuery"
-        autocomplete="off"
-        placeholder="Search images..."
-      />
-      <button type="submit">Search</button>
-    </form>
-
-    <script src="index.js" type="module"></script>
+    <header class="header">
+      <form class="search-form" id="search-form">
+        <input
+          id="search-input"
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="Search images..."
+          class="search-input"
+        />
+        <button type="submit" class="search-btn">Search</button>
+      </form>
+    </header>
+    <main>
+      <section class="gallery">
+        <!-- Tarjetas de imágenes -->
+      </section>
+      <button type="submit" id="load-more" class="hidden load-more">
+        Load more
+      </button>
+      <p id="no-more-images" class="hidden">
+        "We're sorry, but you've reached the end of search results."
+      </p>
+    </main>
+    <footer class="footer">
+      <p>Images provided from</p>
+      <img src="./images/pixabay.png" class="pixabay" alt="pixabay" />
+    </footer>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
-
